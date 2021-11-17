@@ -1,8 +1,8 @@
 ﻿#include <iostream>
-using namespace std;
+using namespace std; // Пространство имён - пока что не знаю, что это
 
 int main()
 {
-    cout << "Hello World!\n";
+    setlocale(LC_ALL, "Rus"); // Русский в консоль
+    cout << "Привет, мир!" << endl;
 }
-
