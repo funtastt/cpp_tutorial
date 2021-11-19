@@ -3,6 +3,6 @@ using namespace std; // Пространство имён - пока что не
 
 int main()
 {
-    setlocale(LC_ALL, "Rus"); // Русский в консоль
-    cout << "Привет, мир!" << endl;
+    setlocale(LC_ALL, "Rus"); // Русский в консоль 
+    cout << "Привет, мир! Я тебя не понимаю." << endl;
 }
