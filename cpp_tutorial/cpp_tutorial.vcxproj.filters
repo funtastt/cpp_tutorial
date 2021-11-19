@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="cpp_tutorial.cpp">
+    <ClCompile Include="code_training_space.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
