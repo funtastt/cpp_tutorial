@@ -12,8 +12,8 @@ void print(string s) {
 
 int main()
 {
-    cout << "Ok" << endl;
     print();  // 1
-    print("bye"); // перегрузка
+    print("byee"); // перегрузка
     return 0;
 }
+ // Я понял как работает git commit и когда git видит изменения.
