@@ -3,14 +3,18 @@ using namespace std; // Пространство имён - пока что не
 
 int main()
 {
-    int i;
-    setlocale(LC_ALL, "Rus"); // Русский в консоль 
-    cout << "Введите целое число: ";
-    cin >> i;
-    cout << "Число ";
-    if (i % 2 != 0)
-    {
-        cout << "не";
-    }
-    cout << "чётное";
+    srand(time(NULL));
+    int a = rand();
+    int b = rand();
+    int c = rand();
+    int d = rand();
+    int e = rand();
+    int f = rand();
+    int g = rand();
+    int h = rand();
+    int i = rand();
+    int j = rand();
+
+    cout << f << " " << g << " " << h << " " << i << " " << j << endl;
+    cout << a << " " << b << " " << c << " " << d << " " << e;
 }
