@@ -3,18 +3,15 @@ using namespace std; // Пространство имён - пока что не
 
 int main()
 {
-    srand(time(NULL));
-    int a = rand();
-    int b = rand();
-    int c = rand();
-    int d = rand();
-    int e = rand();
-    int f = rand();
-    int g = rand();
-    int h = rand();
-    int i = rand();
-    int j = rand();
+    int arr[5]{ 6,3,4,5,2};
 
-    cout << f << " " << g << " " << h << " " << i << " " << j << endl;
-    cout << a << " " << b << " " << c << " " << d << " " << e;
+    int min = INT_MAX;
+
+    for (int i = 0; i < sizeof(arr) / sizeof(int); i++) {
+        if (arr[i] < min)
+        {
+            min = arr[i]; 
+        }
+    }
+    cout << min;
 }
