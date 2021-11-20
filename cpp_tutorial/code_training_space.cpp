@@ -1,21 +1,27 @@
 ﻿#include <iostream>
 using namespace std; // Пространство имён - пока что не знаю, что это
 
-void changeVariable(string *s);
 
-
-int main() {
-	string str = "Hello, world!";
-	cout << str << endl;
-
-	changeVariable(&str); // В метод отправляем адрес ячейки памяти нужной нам переменной.
-	cout << str << endl;
-
-	return 0;
+void swap(int *pa, int *pb) {
+	int swap = *pa;
+	*pa = *pb;
+	*pb = swap;
 }
 
-void changeVariable(string *s) { 
-	// В самом методе реинициализируем данные, которые сейчас  
-	// находятся на нужном нам адресе ячейки памяти.
-	*s = "Bye, world!";
+int main() {
+	setlocale(LC_ALL, "Rus");
+	int plus, minus, divide, multiply;
+	int a, b;
+
+	cout << "Введите первое число: ";
+	cin  >> a;
+	cout << "Введите второе число: ";
+	cin  >> b;
+
+	swap(a, b);
+
+	cout << a << endl;
+	cout << b << endl;
+
+	return 0;
 }
