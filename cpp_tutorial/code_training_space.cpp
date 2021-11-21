@@ -1,22 +1,39 @@
 ﻿#include <iostream>
+#include <string>
 using namespace std; // Пространство имён - пока что не знаю, что это
+using namespace std;
 
-void swap(int *a, int *b) {
-	int swap = *a;
-	*a = *b;
-	*b = swap;
+int getPlus(int a, int b) {
+    return a + b;
 }
 
-int main() {
-	setlocale(LC_ALL, "Rus");
-	int a, b;
-	cout << "1 число: ";
-	cin >> a;
-	cout << "2 число: ";
-	cin >> b;
+int getMinus(int a, int b) {
+    return a - b;
+}
 
-	swap(&a, &b);
+int getMultiply(int a, int b) {
+    return a * b;
+}
 
-	cout << "\n1 число: " << a << endl;
-	cout << "2 число: " << b << endl;
+int getDivide(int a, int b) {
+    return a / b;
+}
+
+void calculate(int a, int b, int (*method)(int a, int b)) {
+    cout << "Результат: " << method(a, b);
+}
+
+
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    int a = 123;
+    int b = 3;
+
+    calculate(a, b, getPlus);
+    calculate(a, b, getMinus);
+    calculate(a, b, getMultiply);
+    calculate(a, b, getDivide);
+
+    return 0;
 }
